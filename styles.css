@@ -236,7 +236,7 @@
         }
 
         .my-swal-border {
-    border: 3px solid rgba(139, 92, 246, 0.3); 
+    border: 3px solid rgba(139, 92, 246, 0.3) !important;
 }
 
 
