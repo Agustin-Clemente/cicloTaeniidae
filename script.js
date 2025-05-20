@@ -1,3 +1,5 @@
+
+
 // Espera a que el DOM esté completamente cargado antes de ejecutar el script
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.querySelector('.cycle-container');
@@ -286,5 +288,13 @@
                         }
                     }
                 });
-            });
+            });        
         });
+
+
+    window.onload = function() {
+        Swal.fire({text:"¡Arrastra y suelta las imágenes para formar tu ciclo!",
+            color: "#716add"
+    });
+    };
+
