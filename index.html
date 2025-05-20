@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo Biológico Taeniidae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="text-white text-5xl font-bold">Ciclo biológico</h1>
+
+    <div class="main-content-wrapper">
+
+
+        <div class="cycle-container">
+
+
+            <div id="animals-element" class="circle-element">
+                <img id="animals-img" src="https://placehold.co/400x250/84cc16/ffffff?text=Hospedador+intermediario"
+                    alt="Hospedador intermediario">
+                <div class="inset-circle border-gray-400" style="top: -15px; right: -15px;">
+                    <img src="https://placehold.co/100x100/6b7280/ffffff?text=Forma\njuvenil" alt="Forma juvenil">
+                </div>
+                <div class="role-label">Hospedador Intermediario</div>
+            </div>
+
+            <div id="person-element" class="circle-element">
+                <img id="person-img" src="https://placehold.co/400x250/22c55e/ffffff?text=Hospedador+Definitivo"
+                    alt="Hospedador de">
+                <div class="inset-circle border-orange-400" style="bottom: -15px; right: -15px;">
+                    <img src="https://placehold.co/100x100/f97316/ffffff?text=Desarrolla" alt="Desarrolla">
+                </div>
+                <div class="role-label">Hospedador Definitivo</div>
+            </div>
+
+            <div id="feces-element" class="circle-element">
+                <img id="feces-img" src="https://placehold.co/400x250/4ade80/ffffff?text=Ambiente" alt="Ambiente">
+                <div class="inset-circle border-purple-400" style="bottom: -15px; right: -15px;">
+                    <img src="https://placehold.co/100x100/c084fc/ffffff?text=Forma\ninfestante" alt="Forma infestante">
+                </div>
+            </div>
+
+            <div id="arrow1" class="arrow-line"></div>
+            <div id="arrow2" class="arrow-line"></div>
+            <div id="arrow3" class="arrow-line"></div>
+
+        </div>
+
+        <div class="draggable-images-container">
+            <img id="drag-adulto" class="draggable-image" src="img/adulto.png" alt="Imagen de cestode Adulto"
+                draggable="true">
+            <img id="drag-huevo" class="draggable-image" src="img/huevo.png" alt="Imagen de Huevo" draggable="true">
+            <img id="drag-Cisticerco" class="draggable-image" src="img/Cisticerco.png" alt="Imagen de Cisticerco"
+                draggable="true">
+            <img id="drag-cenuro" class="draggable-image" src="img/Cenuro.png" alt="Imagen de Cenuro" draggable="true">
+            <img id="drag-quiste" class="draggable-image" src="img/Quiste-hidatidico.png"
+                alt="Imagen de Quiste Quiste-hidatidico" draggable="true">
+            <img id="drag-rumCer" class="draggable-image" src="img/Rumiantes-Cerdos.png"
+                alt="Imagen de Rumiantes-Cerdos" draggable="true">
+            <img id="drag-conejo" class="draggable-image" src="img/conejo.png" alt="Imagen de Conejo" draggable="true">
+            <img id="drag-oveja" class="draggable-image" src="img/oveja.png" alt="Imagen de Oveja" draggable="true">
+            <img id="drag-raton" class="draggable-image" src="img/raton.png" alt="Imagen de Raton" draggable="true">
+            <img id="drag-perro" class="draggable-image" src="img/perro.png" alt="Imagen de Perro" draggable="true">
+            <img id="drag-gato" class="draggable-image" src="img/gato.png" alt="Imagen de Gato" draggable="true">
+            <img id="drag-MF" class="draggable-image" src="img/MF.png" alt="Imagen de Materia fecal" draggable="true">
+
+        </div>
+    </div>
+
+    <section id="tabla-especies" class="mb-20 fade-in-section">
+        <div class="overflow-x-auto shadow-lg rounded-lg">
+            <table class="min-w-full bg-gray-800 rounded-lg overflow-hidden teniasis-table">
+                <thead>
+                    <tr>
+                        <th>Parásito</th>
+                        <th>Tamaño del adulto (cm)</th>
+                        <th>Hospedador definitivo</th>
+                        <th>Hospedador intermediario</th>
+                        <th>Forma juvenil</th>
+                        <th>Localización de la forma juvenil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T. hydatigena</td>
+                        <td>15-60</td>
+                        <td>Perro</td>
+                        <td>Ovino, bovino, cerdo</td>
+                        <td>Cysticercus tenuicollis</td>
+                        <td>Cavidad peritoneal, mesenterio, superficie hígado</td>
+                    </tr>
+                    <tr>
+                        <td>T. ovis</td>
+                        <td>110</td>
+                        <td>Perro</td>
+                        <td>Ovino</td>
+                        <td>Cysticercus ovis</td>
+                        <td>Músculos</td>
+                    </tr>
+                    <tr>
+                        <td>T. pisiformis</td>
+                        <td>200</td>
+                        <td>Perro-gato</td>
+                        <td>Conejo</td>
+                        <td>Cysticercus pisiformis</td>
+                        <td>Cavidad abdominal, hígado</td>
+                    </tr>
+                    <tr>
+                        <td>T. taeniaeformis</td>
+                        <td>15-60</td>
+                        <td>Gato</td>
+                        <td>Ratón</td>
+                        <td>Cysticercus (strobilocercus) fasciolaris</td>
+                        <td>Hígado</td>
+                    </tr>
+                    <tr>
+                        <td>T. saginata</td>
+                        <td>480</td>
+                        <td>Hombre</td>
+                        <td>Bovino</td>
+                        <td>Cysticercus bovis</td>
+                        <td>Corazón, músculos, masetero, lengua, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>T. solium</td>
+                        <td>350</td>
+                        <td>Hombre</td>
+                        <td>Cerdo</td>
+                        <td>Cysticercus cellulosae</td>
+                        <td>Músculos, corazón, diafragma</td>
+                    </tr>
+                    <tr>
+                        <td>T. multiceps</td>
+                        <td>40-100</td>
+                        <td>Perro</td>
+                        <td>Ovino, bovino, hombre</td>
+                        <td>Coenurus cerebralis</td>
+                        <td>Sistema nervioso central, médula espinal</td>
+                    </tr>
+                    <tr>
+                        <td>E. granulosus</td>
+                        <td>0.3 - 0.6</td>
+                        <td>Perro</td>
+                        <td>Ovino, bovino, hombre</td>
+                        <td>Quiste hidatidico</td>
+                        <td>Vísceras, músculos, etc</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
