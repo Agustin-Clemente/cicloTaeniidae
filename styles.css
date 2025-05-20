@@ -235,7 +235,9 @@
             background-color: rgba(236, 72, 153, 0.15); /* Fondo al pasar el mouse (rosa con más transparencia) */
         }
 
-
+        .my-swal-border {
+    border: 3px solid rgba(139, 92, 246, 0.3); 
+}
 
 
         /* Media Queries para pantallas más pequeñas (móviles, tablets) */

@@ -294,7 +294,11 @@
 
     window.onload = function() {
         Swal.fire({text:"¡Arrastra y suelta las imágenes para formar tu ciclo!",
-            color: "#716add"
-    });
+            color: "#716add",
+            background: "black",
+            customClass: {
+        popup: 'my-swal-border'
+    }
+            });
     };
 
