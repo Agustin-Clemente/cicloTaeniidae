@@ -239,6 +239,10 @@
     border: 3px solid rgba(139, 92, 246, 0.3) !important;
 }
 
+ .header-bg {
+            background-color: #5b21b6; /* Un púrpura más oscuro para el encabezado */
+        }
+
 
         /* Media Queries para pantallas más pequeñas (móviles, tablets) */
         @media (max-width: 768px) {
