@@ -1,27 +1,25 @@
- /* Estilos generales para el cuerpo de la página */
         body {
-            font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
-            background-color: #000; /* Fondo negro */
-            min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+            font-family: 'Inter', sans-serif; 
+            background-color: #000; 
+            min-height: 100vh; 
             margin: 0;
-            overflow-x: hidden; /* Evita el scroll horizontal */
-            padding: 20px; /* Padding general para el cuerpo */
-            box-sizing: border-box; /* Incluye padding en el tamaño total */
+            overflow-x: hidden; 
+            padding: 20px; 
+            box-sizing: border-box; 
         }
 
         .main-content-wrapper {
             display: flex;
-            flex-direction: column; /* Organiza los elementos verticalmente */
-            align-items: center; /* Centra los elementos horizontalmente */
-            width: 100%; /* Asegura que el wrapper ocupe todo el ancho disponible */
-            max-width: 900px; /* Limita el ancho máximo del contenido */
-            margin: 0 auto; /* Centra el wrapper en la página */
-            padding: 20px; /* Padding para el contenido dentro del wrapper */
+            flex-direction: column;
+            align-items: center; 
+            width: 100%; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 20px; 
             box-sizing: border-box;
         }
 
 
-        /* Contenedor principal del ciclo, usando CSS Grid para desktop y móvil */
         .cycle-container {
             position: relative; /* Necesario para posicionar las flechas */
             display: grid;
@@ -34,24 +32,23 @@
             grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
             /* Filas: auto para título, minmax para óvalos (altura flexible pero mínima), auto para crédito */
             grid-template-rows: auto minmax(150px, 1fr) minmax(150px, 1fr) auto;
-            gap: 20px; /* Espacio entre los elementos de la cuadrícula */
-            width: 100%; /* Ocupa todo el ancho disponible */
-            max-width: 900px; /* Ancho máximo para pantallas grandes */
-            height: auto; /* Altura automática para adaptarse al contenido */
-            min-height: 500px; /* Altura mínima para asegurar espacio */
+            gap: 20px; 
+            width: 100%; 
+            max-width: 900px; 
+            height: auto; 
+            min-height: 500px; 
             padding: 20px;
             box-sizing: border-box;
         }
 
-        /* Posicionamiento de los elementos principales dentro de la cuadrícula usando grid-area */
         h1 {
             grid-area: title; /* Asigna el título al área 'title' */
-            text-align: center; /* Centra el texto del título */
+            text-align: center;
         }
         #animals-element {
             grid-area: animals; /* Asigna el óvalo de animales al área 'animals' */
-            justify-self: center; /* Centra horizontalmente en su celda */
-            align-self: center; /* Centra verticalmente en su celda */
+            justify-self: center; 
+            align-self: center; 
         }
         #feces-element {
             grid-area: feces; /* Asigna el óvalo de heces al área 'feces' */
@@ -65,40 +62,37 @@
         }
         p { /* Para el texto del crédito */
             grid-area: credit; /* Asigna el crédito al área 'credit' */
-            text-align: right; /* Alinea el texto a la derecha */
+            text-align: right; 
         }
 
-        /* Estilo para cada elemento circular principal del ciclo (óvalos) */
         .circle-element {
             position: relative; /* Necesario para posicionar las imágenes internas y círculos inset */
-            width: 100%; /* Ocupa el 100% del ancho de su celda de cuadrícula */
-            max-width: 250px; /* Ancho máximo para el óvalo */
+            width: 100%; 
+            max-width: 250px; 
             height: 0; /* Truco para mantener el aspecto ratio */
-            padding-bottom: 72%; /* Altura basada en el 72% del ancho (180/250 = 0.72) */
-            border-radius: 50%; /* Hace que el div sea elíptico */
+            padding-bottom: 72%; 
+            border-radius: 50%;
             /* Se cambia overflow a visible para que las etiquetas de rol se muestren fuera */
             overflow: visible;
-            border: 4px solid #a855f7; /* Borde morado */
-            box-shadow: 0 0 15px rgba(168, 85, 247, 0.7); /* Sombra con efecto de brillo morado */
+            border: 4px solid #a855f7; 
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.7); 
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #333; /* Color de fondo de respaldo para las imágenes */
-            transition: all 0.3s ease-in-out; /* Transición suave para efectos visuales */
+            background-color: #333; 
+            transition: all 0.3s ease-in-out; 
         }
 
-        /* Estilo para las imágenes dentro de los elementos circulares */
         .circle-element img {
             position: absolute; /* Posiciona la imagen absolutamente dentro del óvalo */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
-            border-radius: 50%; /* La imagen también respeta la forma elíptica */
+            object-fit: cover;
+            border-radius: 50%; 
         }
 
-        /* Estilo para los pequeños círculos de "muestra" dentro de los elementos principales */
         .inset-circle {
             position: absolute;
             width: 70px; /* Tamaño de los círculos de muestra */
@@ -106,18 +100,17 @@
             border-radius: 50%;
             /* Se cambia overflow a visible para que las imágenes arrastradas no se corten */
             overflow: visible;
-            border: 2px solid; /* Borde de 2px, el color se define en línea */
-            background-color: #555; /* Color de fondo de respaldo */
+            border: 2px solid;
+            background-color: #555; 
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 0.75rem; /* Tamaño de fuente pequeño para el texto de la muestra */
+            font-size: 0.75rem; 
             color: white;
             text-align: center;
-            transition: all 0.3s ease-in-out; /* Transición suave para efectos visuales */
+            transition: all 0.3s ease-in-out;
         }
 
-        /* Estilo para las imágenes dentro de los círculos de muestra */
         .inset-circle img {
             width: 100%;
             height: 100%;
@@ -125,13 +118,12 @@
             border-radius: 50%;
         }
 
-        /* Estilo para la línea de la flecha */
         .arrow-line {
             position: absolute;
-            background-color: #a855f7; /* Color morado para la flecha */
-            height: 4px; /* Grosor de la línea de la flecha */
+            background-color: #a855f7;
+            height: 4px;
             transform-origin: 0 50%; /* Punto de origen para la rotación (centro izquierdo) */
-            z-index: 10; /* Asegura que las flechas estén por encima de otros elementos */
+            z-index: 10;
             /* Añadir estilo para la punta de flecha */
             display: flex; /* Permite usar justify-content para la punta */
             align-items: center; /* Centra la punta verticalmente */
@@ -150,11 +142,10 @@
             top: 50%; /* Centra verticalmente la punta */
         }
 
-        /* Estilos para la sección de imágenes arrastrables */
         .draggable-images-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permite que las imágenes se envuelvan en varias líneas */
+            flex-wrap: wrap;
             gap: 20px;
             margin-top: 30px;
             padding: 20px;
@@ -162,7 +153,7 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
             width: 100%;
-            max-width: 900px; /* Mismo ancho máximo que el contenedor del ciclo */
+            max-width: 900px; 
             box-sizing: border-box;
         }
 
@@ -183,16 +174,15 @@
 
         /* Estilo para el efecto de arrastre sobre un elemento droppable */
         .circle-element.drag-over, .inset-circle.drag-over {
-            border-color: #34d399; /* Borde verde cuando se arrastra sobre él */
-            box-shadow: 0 0 20px rgba(52, 211, 153, 0.7); /* Sombra verde */
-            transform: scale(1.02); /* Ligeramente más grande */
+            border-color: #34d399; 
+            box-shadow: 0 0 20px rgba(52, 211, 153, 0.7);
+            transform: scale(1.02);
         }
 
-        /* Estilo para las etiquetas de rol */
         .role-label {
             position: absolute;
-            top: -25px; /* Ajusta este valor para controlar la distancia sobre el óvalo */
-            left: 50%; /* Centrado horizontalmente */
+            top: -25px; 
+            left: 50%;
             transform: translateX(-50%);
             color: #fff;
             font-size: 0.8rem;
@@ -200,12 +190,11 @@
             text-align: center;
             padding: 2px 8px;
             border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-            z-index: 11; /* Asegura que la etiqueta esté por encima de las flechas si se superponen */
+            background-color: rgba(0, 0, 0, 0.5); 
+            white-space: nowrap; 
+            z-index: 11;
         }
 
-        /* Estilos específicos para la tabla */
         #tabla-especies{
             max-width: 1500px;
             margin: 0 auto;
@@ -213,26 +202,26 @@
       
 
         .teniasis-table {
-            width: 100%;  /*Asegura que la tabla ocupe el ancho disponible */
+            width: 100%;  
             border-collapse: collapse; /* Elimina el espacio entre bordes de celda */
-            margin-top: 20px; /* Espacio superior */
+            margin-top: 20px;
             color: white;
         }
 
         .teniasis-table th, .teniasis-table td {
-            padding: 15px; /* Espaciado interno aumentado */
-            text-align: left; /* Alineación del texto */
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Borde inferior sutil, un poco más visible */
+            padding: 15px; 
+            text-align: left; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         .teniasis-table th {
-            background-color: rgba(139, 92, 246, 0.3); /* Fondo para encabezados (violeta con más transparencia) */
+            background-color: rgba(139, 92, 246, 0.3); 
             font-weight: bold;
-            color: #f0abfc; /* Color de texto ligeramente rosado/violeta claro */
+            color: #f0abfc; 
         }
 
         .teniasis-table tbody tr:hover {
-            background-color: rgba(236, 72, 153, 0.15); /* Fondo al pasar el mouse (rosa con más transparencia) */
+            background-color: rgba(236, 72, 153, 0.15);
         }
 
         .my-swal-border {
@@ -240,11 +229,10 @@
 }
 
  .header-bg {
-            background-color: #5b21b6; /* Un púrpura más oscuro para el encabezado */
+            background-color: #5b21b6; 
         }
 
 
-        /* Media Queries para pantallas más pequeñas (móviles, tablets) */
         @media (max-width: 768px) {
             .cycle-container {
                 /* Mantiene la estructura de grid para el triángulo, pero con tamaños más compactos */
@@ -256,33 +244,47 @@
                 grid-template-columns: 1fr 1fr 1fr; /* Todavía 3 columnas */
                 /* Filas más pequeñas para móvil */
                 grid-template-rows: auto minmax(100px, 1fr) minmax(100px, 1fr) auto;
-                gap: 10px; /* Espacio más pequeño entre elementos */
+                gap: 10px;
                 padding: 10px;
-                min-height: auto; /* Permite que la altura se ajuste al contenido */
+                min-height: auto;
             }
 
-            /* Ajustes de tamaño y fuente para móvil */
             h1 {
-                font-size: 1.8rem; /* Reduce el tamaño del título */
+                font-size: 1.8rem; 
             }
             p {
-                font-size: 0.8rem; /* Reduce el tamaño del texto del crédito */
+                font-size: 0.8rem; 
             }
 
             .circle-element {
-                max-width: 150px; /* Reduce el ancho máximo de los óvalos en móvil */
+                max-width: 150px; 
                 padding-bottom: 72%; /* Mantiene el aspecto ratio */
             }
             .inset-circle {
-                width: 50px; /* Reduce el tamaño de los círculos de muestra */
+                width: 50px;
                 height: 50px;
             }
             .arrow-line {
-                display: none; /* Oculta las líneas en pantallas pequeñas para simplificar el diseño */
+                display: none;
             }
             .draggable-images-container {
-                gap: 10px; /* Reduce el espacio entre las imágenes arrastrables */
-                padding: 10px;
+                flex-wrap: nowrap; 
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch; /* Mejora el scroll en dispositivos iOS */
+                justify-content: flex-start; 
+                padding-bottom: 15px;
+            }
+
+            .draggable-images-container::-webkit-scrollbar {
+                height: 8px; /* Altura de la barra de scroll */
+            }
+
+            .draggable-images-container::-webkit-scrollbar-thumb {
+                background-color: #888; /* Color del "pulgar" del scroll */
+                border-radius: 4px;
+            }
+            .draggable-images-container::-webkit-scrollbar-track {
+                background-color: #f1f1f1; /* Color del fondo de la barra de scroll */
             }
             .draggable-image {
                 width: 80px;
