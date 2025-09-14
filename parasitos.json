@@ -1,0 +1,66 @@
+{
+  "Taenia hydatigena": {
+    "hospedadorDefinitivo": "drag-perro",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-rumCer",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia solium": {
+    "hospedadorDefinitivo": "drag-humano",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-cerdo",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia saginata": {
+    "hospedadorDefinitivo": "drag-humano",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-bovino",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia ovis": {
+    "hospedadorDefinitivo": "drag-perro",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-oveja",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia pisiformis": {
+    "hospedadorDefinitivo": "drag-perroGato",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-conejo",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia taeniaeformis": {
+    "hospedadorDefinitivo": "drag-gato",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-raton",
+    "formaJuvenil": "drag-Cisticerco",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Taenia multiceps": {
+    "hospedadorDefinitivo": "drag-perro",
+    "parasitoAdulto": "drag-adulto",
+    "hospedadorIntermediario": "drag-rumHum",
+    "formaJuvenil": "drag-cenuro",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  },
+  "Echinococcus granulosus": {
+    "hospedadorDefinitivo": "drag-perro",
+    "parasitoAdulto": "drag-eGranulosus",
+    "hospedadorIntermediario": "drag-rumHum",
+    "formaJuvenil": "drag-quiste",
+    "ambiente": "drag-MF",
+    "formaInfestante": "drag-huevo"
+  }
+}

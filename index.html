@@ -23,16 +23,18 @@
                 <img id="animals-img" src="https://placehold.co/400x250/84cc16/ffffff?text=Hospedador\nintermediario"
                     alt="Hospedador intermediario">
                 <div class="inset-circle border-gray-400" style="top: -15px; right: -15px;">
-                    <img src="https://placehold.co/100x100/6b7280/ffffff?text=Forma\njuvenil" alt="Forma juvenil">
+                    <img id="forma-juvenil" src="https://placehold.co/100x100/6b7280/ffffff?text=Forma\njuvenil"
+                        alt="Forma juvenil">
                 </div>
                 <div class="role-label">Hospedador Intermediario</div>
             </div>
 
             <div id="person-element" class="circle-element">
                 <img id="person-img" src="https://placehold.co/400x250/22c55e/ffffff?text=Hospedador\nDefinitivo"
-                    alt="Hospedador de">
+                    alt="Hospedador definitivo">
                 <div class="inset-circle border-orange-400" style="bottom: -15px; right: -15px;">
-                    <img src="https://placehold.co/100x100/f97316/ffffff?text=Desarrolla" alt="Desarrolla">
+                    <img id="desarrolla" src="https://placehold.co/100x100/f97316/ffffff?text=Desarrolla"
+                        alt="Desarrolla">
                 </div>
                 <div class="role-label">Hospedador Definitivo</div>
             </div>
@@ -40,7 +42,8 @@
             <div id="feces-element" class="circle-element">
                 <img id="feces-img" src="https://placehold.co/400x250/4ade80/ffffff?text=Ambiente" alt="Ambiente">
                 <div class="inset-circle border-purple-400" style="bottom: -15px; right: -15px;">
-                    <img src="https://placehold.co/100x100/c084fc/ffffff?text=Forma\ninfestante" alt="Forma infestante">
+                    <img id="forma-infestante" src="https://placehold.co/100x100/c084fc/ffffff?text=Forma\ninfestante"
+                        alt="Forma infestante">
                 </div>
             </div>
 
@@ -50,27 +53,41 @@
 
         </div>
 
+        <button id="check-button"
+            class="check-button mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg shadow-lg hover:bg-purple-700 transition duration-300">
+            Verificar ciclo
+        </button>
+
         <div class="draggable-images-container">
             <img id="drag-adulto" class="draggable-image" src="img/adulto.png" alt="Imagen de cestode Adulto"
                 draggable="true">
+            <img id="drag-eGranulosus" class="draggable-image" src="img/eGranulosus.png"
+                alt="Imagen de Echinococcus granulosus" draggable="true">
             <img id="drag-huevo" class="draggable-image" src="img/huevo.png" alt="Imagen de Huevo" draggable="true">
             <img id="drag-Cisticerco" class="draggable-image" src="img/Cisticerco.png" alt="Imagen de Cisticerco"
                 draggable="true">
             <img id="drag-cenuro" class="draggable-image" src="img/Cenuro.png" alt="Imagen de Cenuro" draggable="true">
             <img id="drag-quiste" class="draggable-image" src="img/Quiste-hidatidico.png"
                 alt="Imagen de Quiste Quiste-hidatidico" draggable="true">
+            <img id="drag-MF" class="draggable-image" src="img/MF.png" alt="Imagen de Materia fecal" draggable="true">
             <img id="drag-rumCer" class="draggable-image" src="img/Rumiantes-Cerdos.png"
                 alt="Imagen de Rumiantes-Cerdos" draggable="true">
             <img id="drag-conejo" class="draggable-image" src="img/conejo.png" alt="Imagen de Conejo" draggable="true">
+            <img id="drag-rumHum" class="draggable-image" src="img/rumHum.png" alt="Imagen de Rumiantes y humano"
+                draggable="true">
+            <img id="drag-cerdo" class="draggable-image" src="img/cerdo.png" alt="Imagen de Cerdo" draggable="true">
+            <img id="drag-bovino" class="draggable-image" src="img/bovino.png" alt="Imagen de Bovino" draggable="true">
             <img id="drag-oveja" class="draggable-image" src="img/oveja.png" alt="Imagen de Oveja" draggable="true">
             <img id="drag-raton" class="draggable-image" src="img/raton.png" alt="Imagen de Raton" draggable="true">
             <img id="drag-perro" class="draggable-image" src="img/perro.png" alt="Imagen de Perro" draggable="true">
             <img id="drag-gato" class="draggable-image" src="img/gato.png" alt="Imagen de Gato" draggable="true">
             <img id="drag-humano" class="draggable-image" src="img/humano.png" alt="Imagen de Humano" draggable="true">
-            <img id="drag-MF" class="draggable-image" src="img/MF.png" alt="Imagen de Materia fecal" draggable="true">
+            <img id="drag-gatoPerro" class="draggable-image" src="img/gatoPerro.png" alt="Imagen de Gato y Perro"
+                draggable="true">
 
         </div>
     </div>
+
 
     <section id="tabla-especies" class="mb-20 fade-in-section">
         <div class="overflow-x-auto shadow-lg rounded-lg">
@@ -156,12 +173,15 @@
 
     </section>
 
-    <footer class="bg-purple-950 text-white text-center py-10 shadow-xl mt-6 "> <p class="text-2xl italic text-purple-300 text-center">&copy; 2025 Clemente Agustín. Todos los derechos reservados.</p> </footer>
+    <footer class="bg-purple-950 text-white text-center py-10 shadow-xl mt-6 ">
+        <p class="text-2xl italic text-purple-300 text-center">&copy; 2025 Clemente Agustín. Todos los derechos
+            reservados.</p>
+    </footer>
 
-       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
